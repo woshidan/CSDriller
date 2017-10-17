@@ -1,0 +1,192 @@
+<html>
+<head>
+  <style type="text/css">
+    .drill {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .drill a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #000;
+      line-height: 1;
+    }
+
+    label {
+      display: block;
+      margin: 0 0 2px 0;
+      padding :12px;
+      line-height: 1;
+      color :#fff;
+      background :#006e54;
+      cursor :pointer;
+    }
+
+    input {
+      display: none;
+    }
+
+    .drill ul {
+      margin: 0;
+      padding: 0px 10px;
+      background :#1a1a1a;
+      list-style: none;
+    }
+
+    .drill li {
+      color : #eee;
+      max-height: 0;
+      overflow-y: hidden;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    
+    #question_1:checked ~ #answer_1 li,
+    #question_2:checked ~ #answer_2 li,
+    #question_3:checked ~ #answer_3 li,
+    #question_4:checked ~ #answer_4 li,
+    #question_5:checked ~ #answer_5 li,
+    #question_6:checked ~ #answer_6 li,
+    #question_7:checked ~ #answer_7 li,
+    #question_8:checked ~ #answer_8 li,
+    #question_9:checked ~ #answer_9 li,
+    #question_10:checked ~ #answer_10 li,
+    #question_11:checked ~ #answer_11 li,
+    #question_12:checked ~ #answer_12 li,
+    #question_13:checked ~ #answer_13 li,
+    #question_14:checked ~ #answer_14 li,
+    #question_15:checked ~ #answer_15 li,
+    #question_16:checked ~ #answer_16 li,
+    #question_17:checked ~ #answer_17 li,
+    #question_18:checked ~ #answer_18 li,
+    #question_19:checked ~ #answer_19 li,
+    #question_20:checked ~ #answer_20 li,
+    #question_21:checked ~ #answer_21 li,
+    #question_22:checked ~ #answer_22 li {
+      max-height: 46px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+<div class="drill">
+  <label for="question_1">Q1: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_1" class="accordion" />
+  <ul id="answer_1">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_2">Q2: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_2" class="accordion" />
+  <ul id="answer_2">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_3">Q3: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_3" class="accordion" />
+  <ul id="answer_3">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_4">Q4: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_4" class="accordion" />
+  <ul id="answer_4">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_5">Q5: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_5" class="accordion" />
+  <ul id="answer_5">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_6">Q6: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_6" class="accordion" />
+  <ul id="answer_6">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_7">Q7: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_7" class="accordion" />
+  <ul id="answer_7">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_8">Q8: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_8" class="accordion" />
+  <ul id="answer_8">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_9">Q9: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_9" class="accordion" />
+  <ul id="answer_9">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_10">Q10: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_10" class="accordion" />
+  <ul id="answer_10">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_11">Q11: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_11" class="accordion" />
+  <ul id="answer_11">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_12">Q12: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_12" class="accordion" />
+  <ul id="answer_12">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_13">Q13: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_13" class="accordion" />
+  <ul id="answer_13">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_14">Q14: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_14" class="accordion" />
+  <ul id="answer_14">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_15">Q15: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_15" class="accordion" />
+  <ul id="answer_15">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_16">Q16: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_16" class="accordion" />
+  <ul id="answer_16">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_17">Q17: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_17" class="accordion" />
+  <ul id="answer_17">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_18">Q18: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_18" class="accordion" />
+  <ul id="answer_18">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_19">Q19: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_19" class="accordion" />
+  <ul id="answer_19">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_20">Q20: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_20" class="accordion" />
+  <ul id="answer_20">
+    <li>cat test.csv</li>
+  </ul>
+  <label for="question_21">Q21: 標準出力に引数 hello を出力</label>
+  <input type="checkbox" id="question_21" class="accordion" />
+  <ul id="answer_21">
+    <li>echo hello</li>
+  </ul>
+  <label for="question_22">Q22: 標準出力に引数 test.csv の中身を出力</label>
+  <input type="checkbox" id="question_22" class="accordion" />
+  <ul id="answer_22">
+    <li>cat test.csv</li>
+  </ul>
+</div>
+</body>
+</html>

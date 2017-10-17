@@ -1,0 +1,66 @@
+<html>
+<head>
+  <style type="text/css">
+    .drill {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .drill a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #000;
+      line-height: 1;
+    }
+
+    label {
+      display: block;
+      margin: 0 0 2px 0;
+      padding :12px;
+      line-height: 1;
+      color :#fff;
+      background :#006e54;
+      cursor :pointer;
+    }
+
+    input {
+      display: none;
+    }
+
+    .drill ul {
+      margin: 0;
+      padding: 0px 10px;
+      background :#1a1a1a;
+      list-style: none;
+    }
+
+    .drill li {
+      color : #eee;
+      max-height: 0;
+      overflow-y: hidden;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    <% csv_rows.each_with_index do |row, i| %>
+    <%= "#question_#{i+1}:checked ~ #answer_#{i+1} li#{"," if csv_rows.length - 1 != i}" %><% end %> {
+      max-height: 46px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+<div class="drill"><% csv_rows.each_with_index do |row, i| %>
+  <label for="<%= "question_#{i+1}" %>"><%= "Q#{i+1}: #{row[0]}" %></label>
+  <input type="checkbox" id="<%= "question_#{i+1}" %>" class="accordion" />
+  <ul id="<%= "answer_#{i+1}" %>">
+    <li><%= "#{row[1]}" %></li>
+  </ul><% end %>
+</div>
+</body>
+</html>

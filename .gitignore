@@ -1,0 +1,9 @@
+CSDriller/local.properties
+*.iml
+.gradle
+CSDriller/.idea/workspace.xml
+CSDriller/.idea/libraries
+.DS_Store
+CSDriller/build
+CSDriller/captures
+.externalNativeBuild
